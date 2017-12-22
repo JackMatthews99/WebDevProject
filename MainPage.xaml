@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="HiLowProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HiLowProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+	<Grid x:Name="mainGrid" Background="#339933" BorderThickness="20">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<TextBlock Name="currentStreak" Text ="Your current winning streak is:" />
+
+		<Image x:Name="cardImage0_1" 
+			Stretch="UniformToFill" 
+			Grid.Column="0"
+			Grid.Row="1"
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" />
+
+		<Image x:Name="cardImage0_2"
+			Grid.Column="1"
+			Grid.Row="1"
+			Stretch="UniformToFill" 
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" RenderTransformOrigin="0.68,0.46" />
+
+		<Image x:Name="cardImage0_3"
+			Grid.Column="2"
+			Grid.Row="1"
+			Stretch="UniformToFill" 
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" RenderTransformOrigin="0.68,0.46" />
+
+		<Image x:Name="cardImage0_4"
+			Grid.Column="3"
+			Grid.Row="1"
+			Stretch="UniformToFill" 
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" RenderTransformOrigin="0.68,0.46" />
+
+		<Image x:Name="cardImage0_5"
+			Grid.Column="4"
+			Grid.Row="1"
+			Stretch="UniformToFill" 
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" RenderTransformOrigin="0.68,0.46" />
+
+		<Image x:Name="cardImage0_6"
+			Grid.Column="5"
+			Grid.Row="1"
+			Stretch="UniformToFill" 
+			HorizontalAlignment="Center" 
+			Height="300"
+			Source="Assets/cardBack.png"
+			Visibility="Visible" RenderTransformOrigin="0.68,0.46" />
+
+
+		<Button x:Name="play"
+			Grid.Column="2"
+			Grid.Row="2"
+			Click="play_Click"
+			Height="200"
+			Width="300"
+			Content="Play"
+			HorizontalAlignment="Center"
+			Visibility="Visible"/>
+
+		<Button x:Name="higher"
+			Grid.Column="1"
+			Grid.Row="2"
+			Click="higher_Click"
+			HorizontalAlignment="Center"
+			Content="Higher"
+			Height="200"
+			Width="300"
+			Visibility="Collapsed"  RenderTransformOrigin="-0.667,0.498" />
+
+		<Button x:Name="lower"
+			Content="Lower"
+			Grid.Column="4"
+			Grid.Row="2"
+			Click="lower_Click"
+			HorizontalAlignment="Center"
+			Height="300"
+			Width="300"
+			Visibility="Collapsed" RenderTransformOrigin="-0.667,0.498"/>
+	</Grid>
+
+
+
+</Page>
